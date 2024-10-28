@@ -37,7 +37,9 @@ class CampoMinado:
     def create_buttons(self):
         for i in range(self.size):
             for j in range(self.size):
-                button = tk.Button(self.master, width=4, height=2,
+                # Define cores alternadas para o estilo de xadrez
+                bg_color = "white" if (i + j) % 2 == 0 else "black"
+                button = tk.Button(self.master, width=4, height=2, bg=bg_color,
                                    command=lambda x=i, y=j: self.reveal(x, y))
                 button.grid(row=i, column=j)
                 self.buttons[i][j] = button
@@ -65,14 +67,12 @@ class CampoMinado:
                     self.reveal(i, j)
 
     def play_explosion_sound(self):
-        # Carregar e tocar o som da explosão
         explosion_sound = pygame.mixer.Sound("jumpscare.wav")  # Caminho para o arquivo de áudio
         explosion_sound.play()
 
     def show_game_over_image(self):
-        # Carregar e mostrar a imagem de game over
         game_over_image = Image.open("jumpscarefreddy.jpeg")  # Altere para o seu arquivo JPEG
-        game_over_image = game_over_image.resize((300, 200), Image.ANTIALIAS)  # Redimensionar se necessário
+        game_over_image = game_over_image.resize((300, 200), Image.LANCZOS)  # Redimensionar se necessário
         self.game_over_photo = ImageTk.PhotoImage(game_over_image)
 
         # Criar um label para exibir a imagem
