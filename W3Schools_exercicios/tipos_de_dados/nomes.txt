@@ -23,7 +23,8 @@ dict =  {"nome" : "John", "idade" : 36}
 
 __________________________________________________________________________
 Definir Tipos:	
-set frozenset = frozenset({"apple", "banana", "cherry"})
+set = {"apple", "banana", "cherry"}
+frozenset = frozenset({"apple", "banana", "cherry"})
 #conjunto imutavel
 
 __________________________________________________________________________
