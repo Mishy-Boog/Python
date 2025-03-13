@@ -1,0 +1,46 @@
+Tipo de Texto:
+str = 'Oiiii'
+
+__________________________________________________________________________
+Tipos Numéricos:	
+int = 6
+float = 9.4
+complex = 2j 
+#qualquer numero mais a letra j
+
+__________________________________________________________________________
+Tipos de Sequência:	
+list = ["uva", "banana", "laranja"]
+tuple = ("uva", "banana", "laranja")
+range = range(6) 
+#gera sequencias de numero, começando no indice 0 (0, 1, 2, 3, 4, 5)
+
+__________________________________________________________________________
+Tipo de Mapeamento:	
+dict =  {"nome" : "John", "idade" : 36}
+#recebe variaveis diferentes
+#é um dicionario
+
+__________________________________________________________________________
+Definir Tipos:	
+set frozenset = frozenset({"apple", "banana", "cherry"})
+#conjunto imutavel
+
+__________________________________________________________________________
+Tipo Booleano:	
+bool = True
+#1 ou qualquer coisa não vazia
+bool = False
+#0 ou qualquer coisa vazia
+
+__________________________________________________________________________
+Tipos Binários:	
+bytes = b"Hello"
+bytearray = bytearray(5)
+memoryview = memoryview(bytes(5))
+
+__________________________________________________________________________
+Nenhum Tipo:	
+NoneType = None
+
+
